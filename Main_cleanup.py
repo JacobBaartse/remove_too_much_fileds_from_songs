@@ -5,10 +5,9 @@ import os
 
 def remove_too_much_fields(filename_input, output_dir, filename_output, fields_to_keep):
     print(filename_output)
-    sample_file = filename_input
     presentation_obj = presentation_pb2.Presentation()
-    file1 = open(sample_file, mode='rb')
-    presentation_obj.ParseFromString(file1.read())
+    with open(filename_input, mode='rb') as pro_file:
+        presentation_obj.ParseFromString(pro_file.read())
 
     for que_idx in range(len(presentation_obj.cues)):
         for action_idx in range(len(presentation_obj.cues[que_idx].actions)):
