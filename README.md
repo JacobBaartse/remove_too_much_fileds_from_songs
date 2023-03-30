@@ -1,5 +1,5 @@
 # remove_too_much_fileds_from_songs
-Remove the fields that are too much in the propresenter song files
+Remove the fields that are too much in the propresenter 7 song files
 
 when using propresenter over time, there could be too much fields added to the song files,
 this can happen when applying different templates to the song files.
